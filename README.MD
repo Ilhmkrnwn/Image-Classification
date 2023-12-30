@@ -26,7 +26,7 @@ Aplikasi ini menggunakan model VGG-16, yang merupakan salah satu arsitektur deep
 
 3. **Menjalankan Aplikasi:**
    - Jalankan aplikasi dengan perintah `python app.py`.
-   - Buka browser dan akses `http://localhost:5000`.
+   - Buka browser dan akses `http://127.0.0.1:2000`.
 
 4. **Input Gambar:**
    - Upload gambar pada input yang disediakan.
