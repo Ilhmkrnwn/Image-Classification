@@ -1,7 +1,7 @@
 ## Aplikasi Klasifikasi Gambar "Rock, Paper, dan Scissor"
 
 ### Overview Aplikasi
-Aplikasi ini merupakan sistem klasifikasi gambar sederhana yang dapat mengenali apakah gambar tersebut merupakan "Rock" (batu), "Paper" (kertas), atau "Scissor" (gunting). Aplikasi ini memanfaatkan model deep learning ResNet50 untuk melakukan klasifikasi dengan tingkat akurasi yang tinggi.
+Aplikasi ini merupakan sistem klasifikasi gambar sederhana yang dapat mengenali apakah gambar tersebut merupakan "Rock" (batu), "Paper" (kertas), atau "Scissor" (gunting). Aplikasi ini memanfaatkan model deep learning VGG-16 untuk melakukan klasifikasi dengan tingkat akurasi yang tinggi.
 
 ![Example](/static/img1.png)
 ![Example2](/static/img2.png)
@@ -14,7 +14,7 @@ Aplikasi ini merupakan sistem klasifikasi gambar sederhana yang dapat mengenali 
 - Aplikasi akan memberikan hasil prediksi, termasuk label klasifikasi (Rock, Paper, atau Scissor), akurasi, dan waktu runtime.
 
 ### Model yang Digunakan
-Aplikasi ini menggunakan model ResNet50, yang merupakan salah satu arsitektur deep learning yang telah terbukti efektif dalam tugas klasifikasi gambar. ResNet50 memiliki kemampuan untuk mengenali pola dan fitur kompleks dalam gambar, membuatnya cocok untuk tugas klasifikasi yang melibatkan gambar kompleks seperti "Rock, Paper, dan Scissor."
+Aplikasi ini menggunakan model VGG-16, yang merupakan salah satu arsitektur deep learning yang telah terbukti efektif dalam tugas klasifikasi gambar. ResNet50 memiliki kemampuan untuk mengenali pola dan fitur kompleks dalam gambar, membuatnya cocok untuk tugas klasifikasi yang melibatkan gambar kompleks seperti "Rock, Paper, dan Scissor."
 
 ### Cara Menjalankan Aplikasi (Development)
 
@@ -22,7 +22,7 @@ Aplikasi ini menggunakan model ResNet50, yang merupakan salah satu arsitektur de
    - Instal dependencies dengan menjalankan `pip install -r requirements.txt`.
    
 2. **Konfigurasi:**
-   - Pastikan model ResNet50 telah disiapkan dan dapat diakses oleh aplikasi.
+   - Pastikan model VGG-16 telah disiapkan dan dapat diakses oleh aplikasi.
 
 3. **Menjalankan Aplikasi:**
    - Jalankan aplikasi dengan perintah `python app.py`.
