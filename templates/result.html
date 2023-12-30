@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Prediction Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #result-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    #accuracy-bar {
+      width: 80%;
+      background-color: #007bff;
+      height: 20px;
+      border-radius: 5px;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+
+    #prediction-time {
+      color: #555;
+      font-size: 0.8em;
+    }
+
+    #result-image {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="result-container">
+    <h2>{{ model }} Model</h2>
+
+    <p>Predicted Label is: {{ labels[pred] }}</p>
+
+    <div id="accuracy-bar" style="width: {{ (probs|max) }}%"></div>
+    <p>Accuracy: {{ (probs|max) }}%</p>
+
+    <p id="prediction-time">Prediction Time: {{ (run_time) }} seconds</p>
+
+    <!-- Adding the image tag -->
+    <img src="{{ url_for('static', filename=img) }}" alt="" class="img-fluid" style="height:300px; width:300px;" id="result-image">
+  </div>
+
+</body>
+</html>
